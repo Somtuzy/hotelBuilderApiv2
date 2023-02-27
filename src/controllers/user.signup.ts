@@ -51,7 +51,7 @@ const signup = async (req: Request, res: Response, next: NextFunction) => {
         console.log(`Token successfully generated for ${user}`);
 
         // Sends the token to the client side for it to be set as the request header using axios
-        res.json({token, user})
+        res.json({userToken: token, user})
 
         next()
     } catch (err: any) {
