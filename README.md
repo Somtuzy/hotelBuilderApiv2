@@ -45,12 +45,12 @@ Creating a new roomtype:
 • method: `POST`
 
 sample request:
-`
+
 {
     "name": "deluxe",
     "description": "there's no better place to be"
 }
-`
+
 
 sample response:
 `
