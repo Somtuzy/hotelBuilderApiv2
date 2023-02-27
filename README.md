@@ -40,20 +40,20 @@ A guest can:
 
 # Sample Requests And Responses
 
-Creating a new roomtype:
+## Creating a new roomtype:
 • endpoint: `localhost:3000/api/v1/roomtypes/create`
 • method: `POST`
 
-sample request:
-
+### sample request:
+```
 {
     "name": "deluxe",
     "description": "there's no better place to be"
 }
+```
 
-
-sample response:
-`
+### sample response:
+```
 {
     success: true,
     message: 'Roomtype created successfully!',
@@ -65,22 +65,22 @@ sample response:
     "updatedAt": "2023-02-27T06:07:50.995Z"
     }
 }
-`
+```
 
-Updating a roomtype:
+## Updating a roomtype:
 • endpoint: `localhost:3000/api/v1/roomtypes/deluxe`
 • method: `PATCH`
 
-sample request:
-`
+### sample request:
+```
 {
     "name": "classic",
     "description": "where class is our watchword"
 }
-`
+```
 
-sample response:
-`
+### sample response:
+```
 {
     success: true,
     message: 'Roomtype updated successfully!',
@@ -92,14 +92,14 @@ sample response:
     "updatedAt": "2023-02-27T06:07:50.995Z"
     }
 }
-`
+```
 
-Deleting a roomtype:
+## Deleting a roomtype:
 • endpoint: `localhost:3000/api/v1/roomtypes/classic`
 • method: `DELETE`
 
-sample response:
-`
+### sample response:
+```
 {
     success: true,
     message: 'Roomtype deleted successfully!',
@@ -112,23 +112,23 @@ sample response:
     "__v": 0
     }
 }
-`
+```
 
-Creating a new room:
+## Creating a new room:
 • endpoint: `localhost:3000/api/v1/rooms/create`
 • method: `POST`
 
-sample request:
-`
+### sample request:
+```
 {
     "codename": "R-007",
     "price": 25000,
     "roomtype": "classic"
 }
-`
+```
 
-sample response:
-`
+### sample response:
+```
 {
     success: true,
     message: 'Room created successfully!',
@@ -149,23 +149,23 @@ sample response:
     "__v": 0
     }
 }
-`
+```
 
-Updating a room:
+## Updating a room:
 • endpoint: `localhost:3000/api/v1/rooms/r-007`
 • method: `PATCH`
 
-sample request:
-`
+### sample request:
+```
 {
     "codename": "R-009",
     "price": 20000,
     "roomtype": "classic"
 }
-`
+```
 
-sample response:
-`
+### sample response:
+```
 {
     success: true,
     message: 'Room updated successfully!',
@@ -185,14 +185,14 @@ sample response:
     "updatedAt": "2023-02-27T06:07:50.995Z"
     }
 }
-`
+```
 
-Deleting a room:
+## Deleting a room:
 • endpoint: `localhost:3000/api/v1/rooms/r-009`
 • method: `DELETE`
 
-sample response:
-`
+### sample response:
+```
 {
     success: true,
     message: 'Room deleted successfully!',
@@ -212,14 +212,14 @@ sample response:
     "updatedAt": "2023-02-27T06:07:50.995Z"
     }
 }
-`
+```
 
-Getting a room with its id
+## Getting a room with its id
 • endpoint: `localhost:3000/api/v1/rooms/63e730b65b1b9246ae78b330`
 • method: `GET`
 
-sample response:
-`
+### sample response:
+```
 {
     success: true,
     message: 'Room fetched successfully!!',
@@ -239,14 +239,14 @@ sample response:
     "updatedAt": "2023-02-27T06:07:50.995Z"
     }
 }
+```
 
-
-Searching for a room with some criteria
+## Searching for a room with some criteria
 • endpoint: `localhost:3000/api/v1/rooms?search=r-007&roomType=classic`
 • method: `GET`
 
-sample response:
-`
+### sample response:
+```
 {
     success: true,
     message: 'Room fetched successfully!!',
@@ -266,13 +266,14 @@ sample response:
     "updatedAt": "2023-02-27T06:07:50.995Z"
     }
 }
+```
 
-Signing up
+## Signing up
 • endpoint: `localhost:3000/api/v1/signup`
 • method: `POST`
 
-sample request:
-`
+### sample request:
+```
 {
     "fullname": "somtochukwu onyeka uzuakpunwa",
     "username": "somtuzy",
@@ -281,10 +282,10 @@ sample request:
     "role": "admin",
     "age": 20
 }
-`
+```
 
-sample response:
-`
+### sample response:
+```
 {
     "userToken": "abshdjneejjwhhyhOIUOUGGUKNJJJJHHGGFYUJKbgsghhgsghhcfgfhsfscffXSASDDFDFDFC",
 
@@ -300,30 +301,28 @@ sample response:
     "updatedAt": "2023-02-27T06:07:50.995Z"
     }
 }
-`
+```
 
 
-Logging in
+## Logging in
 • endpoint: `localhost:3000/api/v1/login`
 • method: `POST`
 
-sample request:
-`
+### sample request:
+```
 {
     "username": "somtuzy",
     "email": "somtuzy@gmail.com",
     "password": "1234567890"
 }
-`
+```
 
-There are a few other end points like:
-
-Getting a roomtype by its name:
+## Getting a roomtype by its name:
 • endpoint: `localhost:3000/api/v1/roomtypes/classic`
 • method: `GET`
 
-sample response:
-`
+### sample response:
+```
 {
     success: true,
     message: 'Room updated successfully!',
@@ -343,14 +342,14 @@ sample response:
     "updatedAt": "2023-02-27T06:07:50.995Z"
     }
 }
-`
+```
 
-Getting a user by their id:
+## Getting a user by their id:
 • endpoint: `localhost:3000/api/v1/users/62e756b57v1h896ge68d559`
 • method: `GET`
 
-sample response:
-`
+### sample response:
+```
 {
     "fullname": "somtochukwu onyeka uzuakpunwa",
     "username": "somtuzy",
@@ -363,14 +362,14 @@ sample response:
     "updatedAt": "2023-02-27T06:07:50.995Z"
 }
 
-`
+```
 
-Editing a user by their id:
+## Editing a user by their id:
 • endpoint: `localhost:3000/api/v1/users/62e756b57v1h896ge68d559`
 • method: `PATCH`
 
-sample request:
-`
+### sample request:
+```
 {
     "fullname": "somtochukwu uzuakpunwa",
     "username": "somtuzay",
@@ -379,9 +378,10 @@ sample request:
     "role": "admin",
     "age": 21
 }
+```
 
-sample response:
-`
+### sample response:
+```
 {
     "message" "user updated successfully",
     data: {
@@ -396,13 +396,14 @@ sample response:
         "updatedAt": "2023-02-27T06:07:50.995Z"
     }
 }
+```
 
- Deleting a user by their id: 
+## Deleting a user by their id: 
 • endpoint: `localhost:3000/api/v1/users/62e756b57v1h896ge68d559`
 • method: `DELETE`
 
-sample response:
-`
+### sample response:
+```
 {
     "message" "user deleted successfully",
     data: {
@@ -417,7 +418,5 @@ sample response:
         "updatedAt": "2023-02-27T06:07:50.995Z"
     }
 }
-
- NB: Some end points haven't been fully implemented in the best operational way but feel free to test them out.
-
-I hope you enjoy the ride!
+```
+NB: Some end points haven't been fully implemented in the best operational way but feel free to test them out.
