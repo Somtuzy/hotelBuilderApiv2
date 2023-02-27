@@ -1,5 +1,5 @@
 # hotelBuilderApiv2
-This is a simple RESTful API for hotel rooms and roomtypes. A user must be signed in either as an admin or as a guest to carry out the basic CRUD operations.
+This is a simple RESTful API for managing hotel rooms, users and roomtypes. A user must be signed in either as an admin or as a guest to carry out the basic CRUD operations.
 
 # Functionalities
 An admin can:
