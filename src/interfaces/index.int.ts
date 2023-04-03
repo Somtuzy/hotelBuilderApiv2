@@ -13,3 +13,19 @@ export interface AuthRequest extends Request {
 export interface MyObject {
     [key: string]: any;
 }
+
+export interface Data {
+    fullname?: string;
+    username?: string;
+    email?: string;
+    age?: number;
+    password?: string | null;
+}
+
+export interface Message {
+    fullname?: string;
+    username?: string;
+    email?: string;
+    age?: string;
+    password?: string ;
+}
