@@ -4,7 +4,7 @@
   "description": "a simple hotel building application",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./build/app.js & tsc -w",
+    "start": "node ./build/app.js & tsc -w",
     "build": "tsc"
   },
   "keywords": [],
