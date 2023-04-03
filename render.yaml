@@ -1,4 +1,4 @@
 services:
-  - name: web
+  - name: hotel
     buildCommand: npm run build
     startCommand: npm run start

@@ -29,10 +29,10 @@
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "helmet": "file:../../../../types",
+    "helmet": "^6.0.1",
     "joi": "^17.8.3",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.10.0",
-    "morgan": "file:../../../../types"
+    "morgan": "^1.10.0"
   }
 }
